@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang wed order food</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+  <!--------------------------------- header-bar ----------------------------------------------------------------------------------------------------->
+    <div class="app">
+      <header class="header">
+        <!-- logo -->
+        <div class="header_logo">
+          <img
+            src="image/foodshop.png"
+            alt="logofoodshop"
+            class="header_logo-img"
+          />
+          <a href="BTL web.html">FoodShop</a>
+        </div>
+        <!-- search -->
+        <div class="header_search">
+          <div class="header_search-input-wrap">
+            <input
+              type="text"
+              class="header_search-input"
+              placeholder="Tìm Kiếm"
+            />
+            <div class="header_search-history">
+              <h3 class="header_search-history-heading">Lịch sử Tìm Kiếm</h3>
+              <ul class="header_search-history-list">
+                <li class="header_search-history-item">
+                  <a href="">hàng 1</a>
+                </li>
+                <li class="header_search-history-item">
+                  <a href="">hàng 2</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="header_search-select">
+            <span class="header_search-select-label">Trong Shop</span>
+            <i class="header_search-select-icon fa-solid fa-caret-down"></i>
+            <ul class="header_search-option">
+              <li class="header_search-option_item">
+                <a href="#">Món 1</a>
+              </li>
+            </ul>
+          </div>
+          <button class="header_search-btn">
+            <i class="header_search-btn-icon fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+
+        <!-- masket-->
+        <div class="header_cast">
+          <i class="header_cast-icon fa-solid fa-cart-shopping"></i>
+          <div class="header_cast-list header_cast-list--nocart">
+            <img
+              src="image/giohangtron.png"
+              alt="giohangtron"
+              class="header_cast-img"
+            />
+          </div>
+        </div>
+
+        <!-- nav_bar -->
+        <div class="header_nav">
+          <button class="header-bars">
+            <i class="header_bars-icon fa-solid fa-bars"></i>
+          </button>
+          <!-- nav login -->
+          <ul class="header_nav-list">
+            <li>
+              <a href="#login_on" class="btn_login">Đăng Nhập</a>
+              <span><i class="fa-solid fa-user"></i></span>
+            </li>
+            <li>
+              <a href="#regester_on" class="btn_regester">Đăng Ký</a>
+              <span><i class="fa-regular fa-user"></i></span>
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+    </header>
+  <!--------------------------------- body ----------------------------------------------------------------------------------------------------->
+    <section class="DanhSach">
+        <h3 style="padding-left: 10px"> Danh mục</h3>
+        <ul style="margin-top: 20px; padding-left: 20px; line-height: 2;">
+            <li><a href="#sanpham" style="padding-left: 0;">Sản phẩm nổi bật</a></li>
+            <li><a href="#spkhac" style="padding-left: 0;">Sản phẩm khác</a></li>
+            <li><a href="#muc_ca">Cá</a></li>
+            <li><a href="#muc_sashimi">Sashimi</a></li>
+            <li><a href="#muc_bo">Bò</a></li>
+            <li><a href="#muc_sup">Súp</a></li>
+            <li><a href="#muc_haisan">Hải sản</a></li>
+            <li><a href="#muc_vit">Gà-Vịt</a></li>
+            <li><a href="#muc_heo">Heo</a></li>
+            <li><a href="#muc_raucu">Rau củ</a></li>
+            <li><a href="#muc_trangmieng">Tráng miệng</a></li>
+            <li><a href="#muc_douong">Đồ uống</a></li>
+            <li><a href="#combo" style="padding-left: 0;">Combo</a></li>
+        </ul>
+    </section>
+    
+    <section id="sanpham" class="sanpham">
+        <div class="spnoibat">
+            <div class="sp-header-title">Sản phẩm nổi bật</div>
+            <div class="sp-list-container">
+                
+                <div class="product-item">
+                    <div class="product-img">
+                        <img src="image/cahoi.webp">
+                    </div>
+                    <strong>Cá hồi nướng sốt chanh leo</strong>
+                    <div class="price">580.000 VNĐ</div>
+                    <button class="spnb">Thêm vào giỏ hàng</button>
+                </div>
+                
+                <div class="product-item">
+                    <div class="product-img">
+                        <img src="image/sashimicatam.webp">
+                    </div>
+                    <strong>Sashimi cá tầm</strong>
+                    <div class="price">650.000 VNĐ</div>
+                    <button class="spnb">Thêm vào giỏ hàng</button>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-img">
+                        <img src="image/bodatvang.webp">
+                    </div>
+                    <strong>Bò dát vàng</strong>
+                    <div class="price">2.500.000 VNĐ</div>
+                    <button class="spnb">Thêm vào giỏ hàng</button>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-img">
+                        <img src="image/ganuongdt.jpg">
+                    </div>
+                    <strong>Gà nướng dân tộc</strong>
+                    <div class="price">320.000 VNĐ</div>
+                    <button class="spnb">Thêm vào giỏ hàng</button>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-img">
+                        <img src="image/caqua.webp">
+                    </div>
+                    <strong>Cá quả nướng nguyên con</strong>
+                    <div class="price">290.000 VNĐ</div>
+                    <button class="spnb">Thêm vào giỏ hàng</button>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-img">
+                        <img src="image/tomhumbotoi.webp">
+                    </div>
+                    <strong>Tôm hùm nướng bơ tỏi</strong>
+                    <div class="price">400.000 VNĐ</div>
+                    <button class="spnb">Thêm vào giỏ hàng</button>
+                </div>
+                
+                <div class="product-item">
+                    <div class="product-img">
+                        <img src="image/bosotvang.webp">
+                    </div>
+                    <strong>Bò sốt vang</strong>
+                    <div class="price">450.000 VNĐ</div>
+                    <button class="spnb">Thêm vào giỏ hàng</button>
+                </div>
+
+                
+                <div class="product-item">
+                    <div class="product-img">
+                        <img src="image/suon.webp">">
+                    </div>
+                    <strong>Sườn nướng mật ong</strong>
+                    <div class="price">350.000 VNĐ</div>
+                    <button class="spnb">Thêm vào giỏ hàng</button>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-img">
+                        <img src="image/cuahoangde.jpg">
+                    </div>
+                    <strong>Cua hoàng đế</strong>
+                    <div class="price">2.800.000 VNĐ</div>
+                    <button class="spnb">Thêm vào giỏ hàng</button>
+                </div>
+
+                
+            </div>
+        </div>
+
+        <!-- Phần sản phẩm khác có thể được thêm vào đây -->
+        <div id="spkhac" class="spkhac"> 
+    
+            <div class="spk-title">Sản phẩm khác</div>
+
+            <div id="muc_ca" >
+                <div class="spk-title-con">Cá</div>
+                <div class="sp-list-container">
+                    <div class="product-item">
+                    <div class="product-img">
+                        <img src="image/cahoi.webp">
+                    </div>
+                    <strong>Cá hồi nướng sốt chanh leo</strong>
+                    <div class="price">580.000 VNĐ</div>
+                    <button class="spnb">Thêm vào giỏ hàng</button>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-img">
+                        <img src="image/caqua.webp">
+                    </div>
+                    <strong>Cá quả nướng nguyên con</strong>
+                    <div class="price">290.000 VNĐ</div>
+                    <button class="spnb">Thêm vào giỏ hàng</button>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-img">
+                        <img src="image/casuhapxidau.jpg">
+                    </div>
+                    <strong>Cá sủ hấp xì dầu</strong>
+                    <div class="price">350.000 VNĐ</div>
+                    <button class="spnb">Thêm vào giỏ hàng</button>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-img">
+                        <img src="image/cachepkhorieng.jpg">
+                    </div>
+                    <strong>Cá chép kho riềng</strong>
+                    <div class="price">350.000 VNĐ</div>
+                    <button class="spnb">Thêm vào giỏ hàng</button>
+                </div>
+                </div>
+            </div>
+            
+            <div id="muc_sashimi">
+                <div class="spk-title-con">Sashimi</div>
+                <div class="sp-list-container">
+                    <div class="product-item">
+                    <div class="product-img">
+                        <img src="image/sashimicatam.webp">
+                    </div>
+                    <strong>Sashimi cá tầm</strong>
+                    <div class="price">650.000 VNĐ</div>
+                    <button class="spnb">Thêm vào giỏ hàng</button>
+                    </div>
+                    
+                    <div class="product-item">
+                    <div class="product-img">
+                        <img src="image/sashimicahoi.webp">
+                    </div>
+                    <strong>Sashimi cá hồi</strong>
+                    <div class="price">650.000 VNĐ</div>
+                    <button class="spnb">Thêm vào giỏ hàng</button>
+                    </div>
+
+                    <div class="product-item">
+                    <div class="product-img">
+                        <img src="image/sashimicatrich.webp">
+                    </div>
+                    <strong>Sashimi cá trích</strong>
+                    <div class="price">650.000 VNĐ</div>
+                    <button class="spnb">Thêm vào giỏ hàng</button>
+                    </div>
+
+                    <div class="product-item">
+                    <div class="product-img">
+                        <img src="image/sashimihaisan.webp">
+                    </div>
+                    <strong>Sashimi hải sản</strong>
+                    <div class="price">650.000 VNĐ</div>
+                    <button class="spnb">Thêm vào giỏ hàng</button>
+                    </div>
+
+                    <div class="product-item">
+                    <div class="product-img">
+                        <img src="image/sashimitrungcahoi.jpg">
+                    </div>
+                    <strong>Sashimi trứng cá hồi</strong>
+                    <div class="price">600.000 VNĐ</div>
+                    <button class="spnb">Thêm vào giỏ hàng</button>
+                    </div>
+
+                </div>
+            </div>
+            
+            <div id="muc_bo" >
+                <div class="spk-title-con">Bò</div>
+                <div class="sp-list-container">
+                    <div class="product-item">
+                    <div class="product-img">
+                        <img src="image/bosotvang.webp">
+                    </div>
+                    <strong>Bò sốt vang</strong>
+                    <div class="price">450.000 VNĐ</div>
+                    <button class="spnb">Thêm vào giỏ hàng</button>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-img">
+                        <img src="image/bodatvang.webp">
+                    </div>
+                    <strong>Bò dát vàng</strong>
+                    <div class="price">800.000 VNĐ</div>
+                    <button class="spnb">Thêm vào giỏ hàng</button>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-img">
+                        <img src="image/dia-bo-luc-lac.jpg">
+                    </div>
+                    <strong>Bò lúc lắc</strong>
+                    <div class="price">500.000 VNĐ</div>
+                    <button class="spnb">Thêm vào giỏ hàng</button>
+                </div>
+                <div class="product-item">
+                    <div class="product-img">
+                        <img src="image/mon-mi-xao-bo-ngon-1024.jpg">
+                    </div>
+                    <strong>Mì bò</strong>
+                    <div class="price">250.000 VNĐ</div>
+                    <button class="spnb">Thêm vào giỏ hàng</button>
+                </div>
+
+                 <div class="product-item">
+                    <div class="product-img">
+                        <img src="image/thit-bo-xien-chien-vung-3.jpg">
+                    </div>
+                    <strong>Bò xiên chiên </strong>
+                    <div class="price">450.000 VNĐ</div>
+                    <button class="spnb">Thêm vào giỏ hàng</button>
+                </div>
+
+                </div>
+            </div>
+
+            <div id="muc_sup" >
+                <div class="spk-title-con">Súp</div>
+                <div class="sp-list-container">
+                    <div class="product-item">
+                    <div class="product-img">
+                        <img src="image/supcua.webp">">
+                    </div>
+                    <strong>Súp cua</strong>
+                    <div class="price">450.000 VNĐ</div>
+                    <button class="spnb">Thêm vào giỏ hàng</button>
+                
+                 </div>
+
+                 <div class="product-item">
+                    <div class="product-img">
+                        <img src="image/supga.webp">">
+                    </div>
+                    <strong>Súp gà</strong>
+                    <div class="price">350.000 VNĐ</div>
+                    <button class="spnb">Thêm vào giỏ hàng</button>
+                
+                 </div>
+
+                 <div class="product-item">
+                    <div class="product-img">
+                        <img src="image/suphaisan.webp">">
+                    </div>
+                    <strong>Súp hải sản</strong>
+                    <div class="price">600.000 VNĐ</div>
+                    <button class="spnb">Thêm vào giỏ hàng</button>
+                
+                 </div>
+
+                 <div class="product-item">
+                    <div class="product-img">
+                        <img src="image/supmangtayhaisan.webp">">
+                    </div>
+                    <strong>Súp măng tây hải sản</strong>
+                    <div class="price">600.000 VNĐ</div>
+                    <button class="spnb">Thêm vào giỏ hàng</button>
+                
+                 </div>
+
+                 </div>
+            </div>
+            
+            <div id="muc_haisan" >
+                <div class="spk-title-con">Hải sản</div>
+                <div class="sp-list-container">
+                    <div class="product-item">
+                    <div class="product-img">
+                        <img src="image/tomhumbotoi.webp">
+                    </div>
+                    <strong>Tôm hùm nướng bơ tỏi</strong>
+                    <div class="price">400.000 VNĐ</div>
+                    <button class="spnb">Thêm vào giỏ hàng</button>
+                    </div>
+
+                    <div class="product-item">
+                        <div class="product-img">
+                        <img src="image/cuahoangde.jpg">
+                        </div>
+                        <strong>Cua hoàng đế</strong>
+                        <div class="price">2.800.000 VNĐ</div>
+                        <button class="spnb">Thêm vào giỏ hàng</button>
+                    </div>
+
+                    <div class="product-item">
+                        <div class="product-img">
+                        <img src="image/raumucxaotuxuyen.jpg">
+                        </div>
+                        <strong>Râu mực xào tứ xuyên</strong>
+                        <div class="price">400.000 VNĐ</div>
+                        <button class="spnb">Thêm vào giỏ hàng</button>
+                    </div>
+
+                    <div class="product-item">
+                        <div class="product-img">
+                        <img src="image/tomchienmuoiot.webp">
+                        </div>
+                        <strong>Tôm chiên muối ớt</strong>
+                        <div class="price">400.000 VNĐ</div>
+                        <button class="spnb">Thêm vào giỏ hàng</button>
+                    </div>
+
+                    <div class="product-item">
+                        <div class="product-img">
+                        <img src="image/tomtamsotthai.jpg">
+                        </div>
+                        <strong>Tôm tắm sốt thái</strong>
+                        <div class="price">400.000 VNĐ</div>
+                        <button class="spnb">Thêm vào giỏ hàng</button>
+                    </div>
+
+                    <div class="product-item">
+                        <div class="product-img">
+                        <img src="image/bebe.jpg">
+                        </div>
+                        <strong>Bề bề</strong>
+                        <div class="price">400.000 VNĐ</div>
+                        <button class="spnb">Thêm vào giỏ hàng</button>
+                    </div>
+
+                    <div class="product-item">
+                        <div class="product-img">
+                        <img src="image/hau.jpg">
+                        </div>
+                        <strong>Hàu </strong>
+                        <div class="price">400.000 VNĐ</div>
+                        <button class="spnb">Thêm vào giỏ hàng</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="muc_vit" >
+                <div class="spk-title-con">Gà-Vịt</div>
+                <div class="sp-list-container"> 
+                     <div class="product-item">
+                    <div class="product-img">
+                        <img src="image/ganuongdt.jpg">
+                    </div>
+                    <strong>Gà nướng dân tộc</strong>
+                    <div class="price">320.000 VNĐ</div>
+                    <button class="spnb">Thêm vào giỏ hàng</button>
+                    </div>
+
+                    <div class="product-item">
+                    <div class="product-img">
+                        <img src="image/vitnuong.webp">
+                    </div>
+                    <strong>Vịt nướng</strong>
+                    <div class="price">320.000 VNĐ</div>
+                    <button class="spnb">Thêm vào giỏ hàng</button>
+                    </div>
+
+                    <div class="product-item">
+                    <div class="product-img">
+                        <img src="image/gachienlamocmat.webp">
+                    </div>
+                    <strong>Gà chiên lá móc mật </strong>
+                    <div class="price">350.000 VNĐ</div>
+                    <button class="spnb">Thêm vào giỏ hàng</button>
+                    </div>
+
+                    <div class="product-item">
+                    <div class="product-img">
+                        <img src="image/gasotcay.webp">
+                    </div>
+                    <strong>Gà sốt cay </strong>
+                    <div class="price">400.000 VNĐ</div>
+                    <button class="spnb">Thêm vào giỏ hàng</button>
+                    </div>
+
+                    <div class="product-item">
+                    <div class="product-img">
+                        <img src="image/nomchanga.jpg">
+                    </div>
+                    <strong>Nộm chân gà</strong>
+                    <div class="price">200.000 VNĐ</div>
+                    <button class="spnb">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="muc_heo" >
+                <div class="spk-title-con">Heo</div>
+                <div class="sp-list-container">
+                    <div class="product-item">
+                    <div class="product-img">
+                        <img src="image/suon.webp">">
+                    </div>
+                    <strong>Sườn nướng mật ong</strong>
+                    <div class="price">350.000 VNĐ</div>
+                    <button class="spnb">Thêm vào giỏ hàng</button>
+                    </div>
+
+                    <div class="product-item">
+                    <div class="product-img">
+                        <img src="image/lonhamhatde.jpg">">
+                    </div>
+                    <strong>Lợn hầm hạt dẻ</strong>
+                    <div class="price">350.000 VNĐ</div>
+                    <button class="spnb">Thêm vào giỏ hàng</button>
+                    </div>
+
+                    <div class="product-item">
+                    <div class="product-img">
+                        <img src="image/lonnuongriengme.jpg">">
+                    </div>
+                    <strong>Lợn nướng riềng mẻ</strong>
+                    <div class="price">350.000 VNĐ</div>
+                    <button class="spnb">Thêm vào giỏ hàng</button>
+                    </div>
+
+                    <div class="product-item">
+                    <div class="product-img">
+                        <img src="image/lonrangchaycanh.webp">">
+                    </div>
+                    <strong>Lợn rang cháy cạnh</strong>
+                    <div class="price">350.000 VNĐ</div>
+                    <button class="spnb">Thêm vào giỏ hàng</button>
+                    </div>
+                 </div>
+            </div>
+
+            <div id="muc_raucu" >
+                <div class="spk-title-con">Rau củ</div>
+                <div class="sp-list-container"> 
+                    <div class="product-item">
+                    <div class="product-img">
+                        <img src="image/rauculuoc.webp">">
+                    </div>
+                    <strong>Rau củ luộc chấm kho quyẹt</strong>
+                    <div class="price">100.000 VNĐ</div>
+                    <button class="spnb">Thêm vào giỏ hàng</button>
+                    </div>
+
+                    <div class="product-item">
+                    <div class="product-img">
+                        <img src="image/raumuongxao.webp">">
+                    </div>
+                    <strong>Rau muống xào tỏi</strong>
+                    <div class="price">80.000 VNĐ</div>
+                    <button class="spnb">Thêm vào giỏ hàng</button>
+                    </div>
+
+                    <div class="product-item">
+                    <div class="product-img">
+                        <img src="image/suploxaonam.webp">">
+                    </div>
+                    <strong>Súp lơ xào nấm</strong>
+                    <div class="price">100.000 VNĐ</div>
+                    <button class="spnb">Thêm vào giỏ hàng</button>
+                    </div>
+
+                    <div class="product-item">
+                    <div class="product-img">
+                        <img src="image/khoquaxaotrung.jpg">">
+                    </div>
+                    <strong>Khổ qua xào trứng</strong>
+                    <div class="price">80.000 VNĐ</div>
+                    <button class="spnb">Thêm vào giỏ hàng</button>
+                    </div>
+
+                    <div class="product-item">
+                    <div class="product-img">
+                        <img src="image/bomgbixaotom.jpg">">
+                    </div>
+                    <strong>Bông bí xào tôm</strong>
+                    <div class="price">180.000 VNĐ</div>
+                    <button class="spnb">Thêm vào giỏ hàng</button>
+                    </div>
+
+                    <div class="product-item">
+                    <div class="product-img">
+                        <img src="image/catimxaothitbam.jpg">">
+                    </div>
+                    <strong>Cà tím xào thịt bằm</strong>
+                    <div class="price">160.000 VNĐ</div>
+                    <button class="spnb">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="muc_trangmieng" >
+                <div class="spk-title-con">Tráng miệng</div>
+                <div class="sp-list-container">
+                    <div class="product-item">
+                    <div class="product-img">
+                        <img src="image/hoaqua.jpg">">
+                    </div>
+                    <strong>Hoa quả tươi</strong>
+                    <div class="price">120.000 VNĐ</div>
+                    <button class="spnb">Thêm vào giỏ hàng</button>
+                    </div>
+
+                    <div class="product-item">
+                    <div class="product-img">
+                        <img src="image/banhtrunghongkong.jpg">">
+                    </div>
+                    <strong>Bánh trứng Hồng Kong</strong>
+                    <div class="price">20.000 VNĐ</div>
+                    <button class="spnb">Thêm vào giỏ hàng</button>
+                    </div>
+
+                    <div class="product-item">
+                    <div class="product-img">
+                        <img src="image/trenhadamhatsen.jpg">">
+                    </div>
+                    <strong>Chè nha đam hạt sen</strong>
+                    <div class="price">50.000 VNĐ</div>
+                    <button class="spnb">Thêm vào giỏ hàng</button>
+                    </div>
+
+                    <div class="product-item">
+                    <div class="product-img">
+                        <img src="image/chethai.jpg">">
+                    </div>
+                    <strong>Chè thái</strong>
+                    <div class="price">40.000 VNĐ</div>
+                    <button class="spnb">Thêm vào giỏ hàng</button>
+                    </div>
+
+                    <div class="product-item">
+                    <div class="product-img">
+                        <img src="image/dau.jpg">">
+                    </div>
+                    <strong>Dâu tây chôclate</strong>
+                    <div class="price">50.000 VNĐ</div>
+                    <button class="spnb">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="muc_douong" >
+                <div class="spk-title-con">Đồ uống</div>
+                <div class="sp-list-container">
+                    <div class="product-item">
+                    <div class="product-img">
+                        <img src="image/trachoauqa.jpg">">
+                    </div>
+                    <strong>Trà hoa quả nhiệt đới</strong>
+                    <div class="price">40.000 VNĐ</div>
+                    <button class="spnb">Thêm vào giỏ hàng</button>
+                    </div>
+
+                    <div class="product-item">
+                    <div class="product-img">
+                        <img src="image/cafe.jpg">">
+                    </div>
+                    <strong>Cafe</strong>
+                    <div class="price">50.000 VNĐ</div>
+                    <button class="spnb">Thêm vào giỏ hàng</button>
+                    </div>
+
+                    <div class="product-item">
+                    <div class="product-img">
+                        <img src="image/Tradaocamsa.jpg">">
+                    </div>
+                    <strong>Trà đào cam sả</strong>
+                    <div class="price">40.000 VNĐ</div>
+                    <button class="spnb">Thêm vào giỏ hàng</button>
+                    </div>
+
+                    <div class="product-item">
+                    <div class="product-img">
+                        <img src="image/sinhtobo.jpg">">
+                    </div>
+                    <strong>Sinh tố bơ</strong>
+                    <div class="price">50.000 VNĐ</div>
+                    <button class="spnb">Thêm vào giỏ hàng</button>
+                    </div>
+
+                    <div class="product-item">
+                    <div class="product-img">
+                        <img src="image/vietquat.jpg">">
+                    </div>
+                    <strong>Sinh tố việt quất sửa chua</strong>
+                    <div class="price">60.000 VNĐ</div>
+                    <button class="spnb">Thêm vào giỏ hàng</button>
+                    </div>
+
+                    <div class="product-item">
+                    <div class="product-img">
+                        <img src="image/cam.jpg">">
+                    </div>
+                    <strong>Sinh tố cam</strong>
+                    <div class="price">40.000 VNĐ</div>
+                    <button class="spnb">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+         <div id="combo" class="spkhac"> 
+    
+            <div class="spk-title-con">Combo</div>
+                <div class="sp-list-container">
+                    <div class="product-item">
+                    <div class="product-img">
+                        <img src="image/setmenu1.jpg">">
+                    </div>
+                    <strong>Menu 1</strong>
+                    <div class="price">3.350.000 VNĐ</div>
+                    <button class="spnb">Thêm vào giỏ hàng</button>
+                    </div>
+
+                    <div class="product-item">
+                    <div class="product-img">
+                        <img src="image/combo2.webp">">
+                    </div>
+                    <strong>Menu 2</strong>
+                    <div class="price">3.500.000 VNĐ</div>
+                    <button class="spnb">Thêm vào giỏ hàng</button>
+                    </div>
+
+                    <div class="product-item">
+                    <div class="product-img">
+                        <img src="image/combo3.jpeg">">
+                    </div>
+                    <strong>Menu 3</strong>
+                    <div class="price">2.000.000 VNĐ</div>
+                    <button class="spnb">Thêm vào giỏ hàng</button>
+                    </div>
+
+                    <div class="product-item">
+                    <div class="product-img">
+                        <img src="image/combo4.webp">">
+                    </div>
+                    <strong>Menu 4</strong>
+                    <div class="price">3.350.000 VNĐ</div>
+                    <button class="spnb">Thêm vào giỏ hàng</button>
+                    </div>
+                 </div>
+           
+            </div>
+
+         </div>
+
+    </section>
+  <!---------------------------------Footer ----------------------------------------------------------------------------------------------------->
+    <footer>
+      <div class="footer-content">
+          <div class="footer-section">
+                      <h3>Gửi phản hồi</h3>
+                      <div class="feedback-form">
+                          <input type="text" placeholder="Họ và tên">
+                          <textarea placeholder="Nội dung phản hồi..."></textarea>
+                          <button type="button" onclick="alert('Cảm ơn bạn đã gửi phản hồi!')">Gửi</button>
+              </div>
+              <p>Nhà hàng chuyên các món ăn nhanh yummy yummy</p>
+              <div class="social-links">
+                  <a href="#" arial-label="Facebook">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                          <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                      </svg>
+                  </a>
+                  <a href="#" aria-label="Instagram">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                          <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                      </svg>
+                  </a>
+                  <a href="#" aria-label="Tiktok">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+                          <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+                      </svg>
+                  </a>
+              </div>
+          </div>
+
+          <div class="footer-section">
+              <h3>Danh mục</h3>
+              <ul>
+                  <li><a href="#">Về chúng tôi</a></li>
+                  <li><a href="#">Thực đơn</a></li>
+                  <li><a href="#">Set Menu</a></li>
+                  <li><a href="#">Món mới</a></li>
+                  <li><a href="#">Khuyến mãi</a></li>
+              </ul>
+          </div>
+
+          <div class="footer-section">
+              <h3>Hỗ trợ</h3>
+              <ul>
+                  <li><a href="#">Chính sách đổi trả</a></li>
+                  <li><a href="#">Điều khoản dịch vụ</a></li>
+                  <li><a href="#">Chính sách bảo mật</a></li>
+                  <li><a href="#">Hướng dẫn đặt hàng</a></li>
+                  <li><a href="#">Câu hỏi thường gặp</a></li>
+              </ul>
+          </div>
+
+          <div class="footer-section">
+              <h3>Liên hệ</h3>
+              <div class="contact-info">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                      <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                  </svg>
+                  <span>Hà Nội</span>
+              </div>
+              <div class="contact-info">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                  </svg>
+                  <span>(012) 3456 7893</span>
+              </div>
+              <div class="contact-info">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                      <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+                  </svg>
+                  <span>123@gmail.com</span>
+              </div>
+              <div class="contact-info">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                      <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
+                      <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"/>
+                  </svg>
+                  <span>Thứ 2 - Chủ nhật: 8:00 - 22:00</span>
+              </div>
+          </div>
+      </div>
+      <div class="footer-bottom">
+          <p>&copy;Designed by group 2</p>
+      </div>
+  </footer>
+  
+    <script src="main.js"></script>
+  </body>
+</html>
