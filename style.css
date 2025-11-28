@@ -379,37 +379,54 @@ ul {
   }
 
   /*--------------------------------------------------------------------body---------------------------------------------------------------*/
-  .DanhSach {
-    height: 100%;
-    width: 200px;
-    position: fixed;
-    z-index: 1;
-    top: 50px;
-    left: 0;
+ .DanhSach {
     background-color: #6081a2;
-    color: white;
-    padding-top: 20px;
+    border-bottom: 2px solid #ddd;
+    top: 60px;
+    display: flex; 
+    position: fixed; /* thanh cố định*/
+    z-index: 1;   /* không bị che*/
+    align-items: center; 
+    padding: 0 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.DanhSach h3 {
+    margin: 0;
+    padding: 15px 20px 15px 10px;
+    color: #d1afaf;
+    font-size: 18px;
+    white-space: nowrap; /* Không xuống dòng */
+    border-right: 1px solid #ccc;
+}
+.DanhSach ul {
+    display: flex; 
+    width: 100%;
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap; /* Tự động xuống dòng nếu màn hình nhỏ */
+}
+.theds {
+    width: 85px;
+    height: 55%;
+    text-align: center;
 }
 .DanhSach ul li {
-    list-style: none;
+    margin: 0;
 }
-/* ÁP DỤNG STYLE CHÍNH CHO THẺ <a> */
 .DanhSach ul li a {
-    /* Đảm bảo link chiếm toàn bộ không gian <li> */
-    display: block; 
-    text-decoration: none; /* Bỏ gạch chân */
-    color: inherit; /* Kế thừa màu trắng từ .DanhSach */
-    cursor: pointer;
-    
-    /* Định dạng kích thước và viền */
-    padding: 5px 20px;
-    border-bottom: 1px solid #34495e;
+    display: block;
+    text-decoration: none;
+    color: #333; 
+    padding: 15px 12px;
+    font-weight: 500;
+    font-size: 16px;
+    transition: all 0.3s; 
 }
-/* HIỆU ỨNG KHI DI CHUỘT (Dùng :hover trên thẻ <a>) */
 .DanhSach ul li a:hover {
-    color: #f1c40f;
-    padding-left: 25px; /* Hiệu ứng dịch chuyển */
-    transition: all 0.2s ease-in-out; /* Dùng 'all' cho transition */
+    background-color: #d32f2f; 
+    color: white; 
 }
 .sanpham{
     margin-left: 0;
