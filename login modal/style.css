@@ -1,0 +1,51 @@
+body {
+    font-family: Arial;
+}
+
+
+header {
+    background: orange;
+    padding: 10px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+button {
+    padding: 6px 12px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background: white;
+    width: 250px;
+    margin: 15% auto;
+    padding: 15px;
+}
+
+.modal-content input {
+    width: 100%;
+    margin: 6px 0;
+    padding: 6px;
+}
+
+.modal-content button {
+    width: 100%;
+    background: orange;
+    color: white;
+}
+
+.close {
+    float: right;
+    cursor: pointer;
+}
