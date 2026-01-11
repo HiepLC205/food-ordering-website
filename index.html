@@ -91,7 +91,7 @@
               <span><i class="fa-solid fa-user"></i></span>
             </li>
             <li>
-              <a href="#regester_on" class="btn_regester">Đăng Ký</a>
+              <a href="#regester_on" class="btn_regester" onclick ="openRegister()">Đăng Ký</a>
               <span><i class="fa-regular fa-user"></i></span>
             </li>
           </ul>
@@ -865,6 +865,45 @@
       </div>
   </footer>
   
+  <!-- Register modal -->
+  <div id="register-modal" class = "modal-overlay">
+      <div class="form-box register">
+        <span class="close-btn" onclick = "closeModal()">&times;</span>
+        <form id="registerForm" action="">
+          <h1>Đăng ký</h1>
+          <div class="input-box">
+            <label for="email" class="label">Email</label>
+            <input id="email" type="email" placeholder="Nhập email" required />
+          </div>
+
+          <div class="input-box">
+            <label for="pwd" class="label">Mật khẩu</label>
+            <input
+              id="pwd"
+              type="password"
+              name="password"
+              placeholder="Nhập mật khẩu"
+              required
+            />
+          </div>
+
+          <div class="input-box">
+            <label for="cf_pwd" class="label">Xác nhận mật khẩu</label>
+            <input
+              id="cf_pwd"
+              type="password"
+              name="confirm password"
+              placeholder="Nhập lại mật khẩu"
+              required
+            />
+          </div>
+          <button type="submit" class="btn">Đăng ký</button>
+          <div class="login-link">
+            <p>Bạn đã có tài khoản?<a href="#">Đăng nhập</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>
